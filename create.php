@@ -41,3 +41,35 @@ if(empty($_SESSION['errors'])){
 }
 
 }
+require_once 'includes/header.php';
+?>
+<h1>Agregar Nuevo Producto</h1>
+<form method="POST" action="create.php" novalidate>
+    <div class="form-group">
+        <label for="id">ID del Producto</label>
+        <input type="text" name="id" id="id" value="<?= htmlspecialchars($_POST['id'] ?? '') ?>" required>
+    </div>
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="<?= htmlspecialchars($_POST['nombre'] ?? '') ?>" required>
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea name="descripcion" id="descripcion" required><?= htmlspecialchars($_POST['descripcion'] ?? '') ?></textarea>
+    </div>
+    <div class="form-group">
+        <label for="categoria">Categoría</label>
+        <input type="text" name="categoria" id="categoria" value="<?= htmlspecialchars($_POST['categoria'] ?? '') ?>" required>
+    </div>
+    <div class="form-group">
+        <label for="precio">Precio ($)</label>
+        <input type="number" step="0.01" name="precio" id="precio" value="<?= htmlspecialchars($_POST['precio'] ?? '') ?>" required>
+    </div>
+    <div class="form-group">
+        <label for="stock">Stock</label>
+        <input type="number" name="stock" id="stock" value="<?= htmlspecialchars($_POST['stock'] ?? '') ?>" required>
+    </div>
+    <button type="submit" class="btn btn-success">Guardar Producto</button>
+    <a href="index.php" class="btn">Cancelar</a>
+</form>
+<?php require_once 'includes/footer.php'; ?>

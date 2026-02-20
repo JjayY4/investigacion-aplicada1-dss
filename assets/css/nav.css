@@ -1,0 +1,20 @@
+nav {
+    background-color: #004085;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border-bottom: 2px solid #002752;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #002752;
+    white-space: nowrap;
+}
+nav a:hover {
+    background-color: #002752;
+}
