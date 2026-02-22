@@ -1,0 +1,22 @@
+.btn {
+    background-color: #004085;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #002752;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-warning {
+    background-color: #ffc107;
+    color: #000;
+    border: 1px solid #d39e00;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #bd2130;
+}
+.btn-success {
+    background-color: #28a745;
+    border: 1px solid #1e7e34;
+}
