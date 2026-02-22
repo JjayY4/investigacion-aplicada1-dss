@@ -15,6 +15,3 @@ nav a {
     border-right: 1px solid #002752;
     white-space: nowrap;
 }
-nav a:hover {
-    background-color: #002752;
-}
